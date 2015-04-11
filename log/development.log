@@ -884,3 +884,718 @@ Started GET "/assets/patients-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::
 
 
 Started GET "/assets/application-001948a807d6467a657420955d9f0c1c.js?body=1" for ::1 at 2015-04-10 21:54:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (11.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-04-10 23:31:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (26.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (8.1ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 579ms (Views: 460.2ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-10 23:31:44 -0400
+Processing by PatientsController#index as HTML
+  [1m[36mPatient Load (0.2ms)[0m  [1mSELECT "patients".* FROM "patients"[0m
+  Rendered patients/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/custom-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/assets/application-886b60710b935afa87e768d196b427eb.css?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/assets/patients-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/assets/scaffolds-c8ef6f27dee7de1209db9f5ea063d43f.css?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/assets/application-001948a807d6467a657420955d9f0c1c.js?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/assets/patients-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-10 23:31:44 -0400
+
+
+Started GET "/patients/new" for ::1 at 2015-04-10 23:31:47 -0400
+Processing by PatientsController#new as HTML
+  Rendered patients/_form.html.erb (190.6ms)
+  Rendered patients/new.html.erb within layouts/application (208.4ms)
+Completed 200 OK in 287ms (Views: 282.5ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (12.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-04-11 00:02:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (13.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (10.3ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 253ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2078165906717646135_70305233578980'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (117.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (61.8ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (165.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:05:58 -0400
+Processing by PatientsController#index as HTML
+  [1m[36mPatient Load (0.2ms)[0m  [1mSELECT "patients".* FROM "patients"[0m
+  Rendered patients/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 107ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2078165906717646135_70305233578980'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (68.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (148.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:15:27 -0400
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (16.7ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (29.4ms)
+Completed 500 Internal Server Error in 255ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2078165906717646135_70305233578980'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (55.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (144.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:33:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (12.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (8.9ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 311ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2645429668897919078_70131467269140'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (68.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (176.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:36:08 -0400
+Processing by PatientsController#index as HTML
+  [1m[36mPatient Load (0.3ms)[0m  [1mSELECT "patients".* FROM "patients"[0m
+  Rendered patients/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2645429668897919078_70131467269140'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (74.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (150.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:38:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (14.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (9.3ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 312ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1144421882909378951_70142710792800'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (56.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (159.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:38:08 -0400
+Processing by PatientsController#index as HTML
+  [1m[36mPatient Load (0.2ms)[0m  [1mSELECT "patients".* FROM "patients"[0m
+  Rendered patients/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1144421882909378951_70142710792800'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.2ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (64.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (135.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:47:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (12.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (8.7ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 243ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3424855180735921544_70234185536440'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (72.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (152.9ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:47:27 -0400
+Processing by PatientsController#index as HTML
+  [1m[36mPatient Load (0.2ms)[0m  [1mSELECT "patients".* FROM "patients"[0m
+  Rendered patients/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3424855180735921544_70234185536440'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (6.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.9ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (138.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:49:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (12.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (8.8ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 138ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2942554973882809744_70197889986700'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (168.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:54:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (13.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (16.1ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (21.4ms)
+Completed 500 Internal Server Error in 5144ms
+
+ActionView::Template::Error (Undefined variable: "$alert-padding".
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/assets/stylesheets/bootstrap/_alerts.scss:10)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/assets/stylesheets/bootstrap/_alerts.scss:10
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1961244022324867791_70242932802880'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (64.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (156.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 00:55:02 -0400
+Processing by PatientsController#index as HTML
+  [1m[36mPatient Load (0.2ms)[0m  [1mSELECT "patients".* FROM "patients"[0m
+  Rendered patients/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 119ms
+
+ActionView::Template::Error (Undefined variable: "$alert-padding".
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/assets/stylesheets/bootstrap/_alerts.scss:10)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/assets/stylesheets/bootstrap/_alerts.scss:10
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1961244022324867791_70242932802880'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (129.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 01:00:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (12.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (8.5ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 289ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1426101201851591145_70340650330900'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (82.9ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (197.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 01:17:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (24.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (10.2ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 296ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3722115982197239490_70168876815000'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (89.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (197.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 01:17:43 -0400
+Processing by PatientsController#index as HTML
+  [1m[36mPatient Load (0.1ms)[0m  [1mSELECT "patients".* FROM "patients"[0m
+  Rendered patients/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3722115982197239490_70168876815000'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (58.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (133.9ms)
+
+
+Started GET "/" for ::1 at 2015-04-11 01:17:44 -0400
+Processing by PatientsController#index as HTML
+  [1m[35mPatient Load (0.1ms)[0m  SELECT "patients".* FROM "patients"
+  Rendered patients/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/annietran/GitHub/VSMWebApp/app/assets/images
+  /Users/annietran/GitHub/VSMWebApp/app/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/javascripts
+  /Users/annietran/GitHub/VSMWebApp/vendor/assets/stylesheets
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/jquery-rails-4.0.3/vendor/assets/javascripts
+  /Users/annietran/.rvm/gems/ruby-2.2.0/gems/coffee-rails-4.1.0/lib/assets/javascripts
+  (in /Users/annietran/GitHub/VSMWebApp/app/assets/stylesheets/custom.css.scss:1)):
+     9:     <!-- Bootstrap -->
+    10:     <link href="css/bootstrap.min.css" rel="stylesheet">
+    11:   <title>VSMWebApp</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    13:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    14:   <%= csrf_meta_tags %>
+    15:       <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.css.scss:1
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3722115982197239490_70168876815000'
+
+
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.0ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (61.8ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/annietran/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (127.6ms)
